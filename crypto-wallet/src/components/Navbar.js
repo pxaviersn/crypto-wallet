@@ -15,6 +15,7 @@ export default function Navbar() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
+    <div>
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
         <MDBNavbarBrand href='/dashboard'>Crypto Tracker</MDBNavbarBrand>
@@ -26,8 +27,10 @@ export default function Navbar() {
           onClick={() => setShowBasic(!showBasic)}
         >
           <MDBIcon icon='bars' fas />
-        </MDBNavbarToggler>
 
+          
+        </MDBNavbarToggler>
+          <div>
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
@@ -50,7 +53,9 @@ export default function Navbar() {
             
           </MDBNavbarNav>
         </MDBCollapse>
+        </div>
       </MDBContainer>
     </MDBNavbar>
+    </div>
   );
 }
