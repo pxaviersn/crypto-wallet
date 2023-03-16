@@ -1,0 +1,12 @@
+.table-hover tbody tr:hover td {
+    color: #5cbed4;
+  }
+
+  .profit-positive {
+    color: green;
+  }
+  
+  .profit-negative {
+    color: red;
+  }
+  
