@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar a {
+    font-size: 3rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .brand-bit {
+    color: white;
+  }
+  
+  .brand-tracker {
+    color: rgb(92, 191, 212);
+  }
+  
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .navbar-menu a {
+    font-size: 1.5rem;
+    color: rgb(92, 191, 212);
+    text-decoration: none;
+    transition: color 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: white;
+  }
+  

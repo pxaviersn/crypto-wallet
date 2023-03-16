@@ -1,10 +1,12 @@
+import Navbar from "../components/Navbar";
 const AboutPage = () => {
 
     return ( 
-      <div className="about">
-      <h1>About</h1>
+      <div>
+        <Navbar />
       </div>
-     );
+      
+    );
   }
    
   export default AboutPage;
