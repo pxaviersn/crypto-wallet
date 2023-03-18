@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
-import './CustomSwal.css';
+import './EditPosition.css';
 
 const EditItemPage = () => {
   const [coin, setCoin] = useState('');
@@ -155,7 +155,7 @@ const EditItemPage = () => {
             </div>
     
             <div className="form-group">
-              <Button variant="primary" type="submit" style={{ marginTop: "5%", width: "100%", display: "block" }}>
+              <Button variant="primary" className='confirmBtn' type="submit" style={{ marginTop: "5%", width: "100%", display: "block" }}>
                 Save
               </Button>
             </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
 import SignInPage from './pages/SignInPage';
@@ -8,6 +7,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import HomePage from './pages/HomePage';
 import EditPositionPage from './pages/EditPositionPage';
 import CreatePositionPage from './pages/CreatePositionPage'
+import './App.css';
 
 function App() {
   return (
