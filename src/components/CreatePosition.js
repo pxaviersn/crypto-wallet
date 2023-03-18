@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Button } from 'react-bootstrap';
+import './EditPosition.css';
 
 
 const CreatePosition = () => {
@@ -130,7 +131,7 @@ return (
         </div>
 
         <div className="form-group">
-          <Button variant="primary" type="submit" style={{ marginTop: "5%", width: "100%", display: "block" }}>
+          <Button variant="primary" className='confirmBtn' type="submit" style={{ marginTop: "5%", width: "100%", display: "block" }}>
             Save
           </Button>
         </div>

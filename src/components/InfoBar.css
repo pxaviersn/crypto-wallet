@@ -28,3 +28,11 @@
   padding: 3px 5px;
   border-radius: 3px;
 }
+
+.profit-positive {
+  color: green;
+}
+
+.profit-negative {
+  color: red;
+}

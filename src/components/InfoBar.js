@@ -1,6 +1,5 @@
 import './InfoBar.css';
 
-
 const InfoBar = ({
   totalInvested,
   totalCurrentBalance,
@@ -17,6 +16,10 @@ const InfoBar = ({
     return formatter.format(value);
   };
 
+  const getProfitClass = (value) => {
+    return value >= 0 ? 'profit-positive' : 'profit-negative';
+  };
+
   return (
     <div className="info-bar">
       <div className="info-item">
@@ -29,11 +32,15 @@ const InfoBar = ({
       </div>
       <div className="info-item">
         <span className="info-label">(%) Profit:</span>
-        <span className="info-value">{totalProfitPercentage.toFixed(2)}%</span>
+        <span className={`info-value ${getProfitClass(totalProfitPercentage)}`}>
+          {totalProfitPercentage.toFixed(2)}%
+        </span>
       </div>
       <div className="info-item">
         <span className="info-label">($) Profit:</span>
-        <span className="info-value">{formatCurrency(totalProfit)}</span>
+        <span className={`info-value ${getProfitClass(totalProfit)}`}>
+          {formatCurrency(totalProfit)}
+        </span>
       </div>
     </div>
   );
